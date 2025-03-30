@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Crafty Peaches</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Crafty Peaches</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product-page.html?category=BandBracelets&price=1">Band Bracelets</a></li>
+                    <li><a href="product-page.html?category=ClayBracelets&price=2">Clay Bracelets</a></li>
+                    <li><a href="product-page.html?category=CrochetScrunchies&price=5">Crochet Scrunchies</a></li>
+                    <li><a href="product-page.html?category=StickCrosses&price=4">Stick Crosses</a></li>
+                    <li><a href="product-page.html?category=RockPaintings&price=4">Rock Paintings</a></li>
+                    <li><a href="product-page.html?category=Keychains&price=3">Keychains</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="product-gallery">
+        <div class="container">
+            <div class="product-header">
+                <h2 id="category-title">Loading...</h2>
+                <p class="price" id="category-price">Loading...</p>
+            </div>
+            
+            <div id="gallery" class="gallery-grid">
+                <!-- Images will be dynamically loaded here -->
+                <p class="loading-message">Loading images...</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Enlarged product">
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Crafty Peaches. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/lightbox.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
